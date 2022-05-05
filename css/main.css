@@ -341,6 +341,22 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "SpaceMono";
+  src: url("../fonts/SpaceMono-Bold.ttf"), url("../fonts/SpaceMono-Bold.woff"), url("../fonts/SpaceMono-Bold.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SpaceMono";
+  src: url("../fonts/SpaceMono-Regular.ttf"), url("../fonts/SpaceMono-Regular.woff"), url("../fonts/SpaceMono-Regular.woff2");
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../fonts/LexendDeca-Regular.ttf"), url("../fonts/LexendDeca-Regular.woff"), url("../fonts/LexendDeca-Regular.woff2");
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -364,7 +380,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "SpaceMono";
   font-size: 16px;
   line-height: 1.5;
 }
@@ -388,7 +404,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1157px;
+  max-width: 1480px;
   margin: 0 auto;
   padding: 0 20px;
 }
