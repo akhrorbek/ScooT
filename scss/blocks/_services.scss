@@ -1,0 +1,45 @@
+.services {
+    padding-bottom: 199px;
+    &__container {
+        background-image: url("../../images/line-divider.png");
+        background-repeat: no-repeat;
+        background-position: top 50px left;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        list-style: none;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__item + &__item {
+        margin-left: 30px;
+    }
+    &__icons {
+        margin-bottom: 40px;
+    }
+    &__heading {
+        margin: 0;
+        margin-bottom: 27px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+    &__text {
+        margin: 0;
+        font-family: 'LexendDeca';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
