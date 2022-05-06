@@ -1,8 +1,9 @@
 .hero {
     padding-bottom: 160px;
     &__container {
-        background-image: url("../../images/hero-Bg.png");
+        background-image: url("../images/hero-Bg.png");
         background-repeat: no-repeat;
+        background-size: cover;
         padding-top: 153px;
     }
     &__heading {
@@ -40,7 +41,7 @@
     .hero {
     padding-bottom: 122px;
         &__container {
-            background-image: url("../../images/hero-t-bg.png");
+            background-image: url("../images/hero-t-bg.png");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -75,7 +76,7 @@
         padding-bottom: 120px;
 
         &__container {
-            background-image: url("../../images/hero-m-bg.png");
+            background-image: url("../images/hero-m-bg.png");
             background-repeat: no-repeat;
             background-position: center;
             display: flex;

@@ -1,23 +1,19 @@
 .services {
     padding-bottom: 199px;
     &__container {
-        background-image: url("../../images/line-divider.png");
+        background-image: url("../images/line-divider.png");
         background-repeat: no-repeat;
         background-position: top 50px left;
-        display: flex;
-        align-items: center;
     }
     &__list {
         display: flex;
+        justify-content: center;
+        list-style:none;
         margin: 0;
         padding: 0;
-        align-items: center;
-        list-style: none;
     }
     &__item {
-        display: flex;
-        flex-direction: column;
-
+        width: 350px;
     }
     &__item + &__item {
         margin-left: 30px;
@@ -42,4 +38,69 @@
         line-height: 25px;
         color: #939CAA;
     }
+}
+
+@media only screen and (max-width:930px) {
+    .services {
+        padding-bottom: 145px;
+        &__container {
+            background-image: none;
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__item {
+            display: flex;
+            width: 573px;
+            margin-bottom: 40px;
+        }
+        &__item + &__item {
+            margin-left: 0px;
+        }
+        &__item-wrapper {
+            margin-left: 79px;
+        }
+    }
+.services__item--item-three {
+    margin-bottom: 0;
+}
+
+}
+
+@media only screen and (max-width:680px) {
+    .services {
+        padding-bottom: 120px;
+
+        &__list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 311px;
+            margin-bottom: 48px;
+        }
+        &__item-wrapper {
+            margin-left: 0px;
+        }
+        &__icons {
+            margin-bottom: 24px;
+        }
+        &__heading {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+    .services__item--item-three {
+        margin-bottom: 0;
+    }
+
 }
