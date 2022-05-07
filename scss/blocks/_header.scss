@@ -12,6 +12,12 @@
         text-decoration: none;
         flex-shrink: 0;
     }
+    &__logo-link:hover {
+        opacity: 0.8;
+        &:active {
+            opacity: 0.5;
+        }
+    }
     &__hamburger {
         display: none;
         border: none;

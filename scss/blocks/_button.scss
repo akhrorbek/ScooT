@@ -10,7 +10,10 @@
     cursor: pointer;
     border: solid #FCB72B 3px;
     &:hover {
-        opacity: 0.8;
+        background-color: white;
+        color: #FCB72B;
+        border: solid #FCB72B 3px;
+        transition: 0.2s;
     }
     &:active {
         background-color: white;

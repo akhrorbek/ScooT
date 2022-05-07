@@ -1,17 +1,11 @@
 .service-offer {
     padding-bottom: 200px;
-    &__container {
-        padding: 0;
-    }
     &__list {
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
         list-style: none;
-    }
-    &__image {
-        display: none; ///none qilishning sababi desktop qismiga "image" background sifatida berilgan
     }
     &__item-wrapper {
         width: 445px;
@@ -22,28 +16,6 @@
     }
     &__item:nth-child(even) {
         flex-direction: row-reverse;
-    }
-///Rasmlar background sifatida berilyapti
-    &__item:nth-child(1) {
-        background-image: url("../images/circle-with.png");
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-size: contain;
-        background-size: 620px 330px;
-    }
-    &__item:nth-child(2) {
-        background-image: url("../images/circle2.png");
-        background-repeat: no-repeat;
-        background-position: center left;
-        background-size: contain;
-        background-size: 520px 335px;
-    }
-    &__item:nth-child(3) {
-        background-image: url("../images/Group-zero.png");
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-size: contain;
-        background-size: 520px 335px;
     }
     &__item + &__item {
         margin-top: 155px; ///elementlarni orasini ochish margin orqali
@@ -66,16 +38,6 @@
         color: #939CAA;
         margin-bottom: 40px;
     }
-
-///bu yerda faqatgina "toq" elmentlar: heading,paragraph va button qismlar alohida divga olingan va background imagedan chapga margin bilan surilyapti
-.service-offer__item-wrapper--odd {
-    margin-left: 170px;
-}
-
-///bu yerda faqatgina "juft" elmentlar: heading,paragraph va button qismlar alohida divga olingan va background imagedan chapga margin bilan surilyapti
-.service-offer__item-wrapper--even {
-    margin-right: 170px;
-}
 }
 
 
@@ -89,6 +51,14 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin-top: 56px;
+        }
+        &__item:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+
+        &__item:nth-child(odd) {
+            flex-direction: column-reverse;
         }
         &__item-heading {
             width: 457px;
@@ -101,35 +71,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-        &__item:nth-child(even) {
-            flex-direction: column-reverse;
-        }
-        &__item:nth-child(odd){
-            flex-direction: column-reverse;
-        }
-        &__item:nth-child(1) {
-            background-image:none;
-        }
-        &__item:nth-child(2) {
-            background-image:none;
-
-        }
-        &__item:nth-child(3) {
-            background-image: none;
-        }
-        &__image {
-            display: block;
-            margin-bottom: 64px;
-        }
-
-///bu yerda faqatgina "toq" elmentlar: heading,paragraph va button qismlar alohida divga olingan va background imagedan chapga marginlari olib tawlangan
-.service-offer__item-wrapper--odd {
-            margin: 0px;
-        }
-///bu yerda faqatgina "juft" elmentlar: heading,paragraph va button qismlar alohida divga olingan va background imagedan chapga marginlari olib tawlangan
-.service-offer__item-wrapper--even {
-            margin: 0px;
         }
 .site-btn--services-offer__btn {
             margin:0;

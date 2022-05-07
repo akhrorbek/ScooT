@@ -1,1 +1,81 @@
-//BU YERDA SYTIMIZNING FOOTER QISMIGA ISHLOV BERILADI
+.site-footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #333A44;
+    &__container {
+        display: flex;
+        align-items: center;
+        white-space:0;
+    }
+    &__logo-link {
+        flex-shrink: 0;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+    }
+    &__social-media {
+        margin-left: auto;
+    }
+    &__social-link:hover path {
+        color:#E5ECF4;
+    }
+    &__social-link {
+        text-decoration: none;
+        color:#FCB72B;
+        &:hover{
+            color: #E5ECF4;
+        }
+    }
+    &__social-link + &__social-link {
+        margin-left: 24px;
+    }
+}
+
+///TABLET
+@media only screen and (max-width:930px) {
+    .site-footer {
+        &__container {
+            padding: 32px 40px;
+        }
+    }
+}
+
+///MOBILE QISMI
+@media only screen and (max-width:680px) {
+    .site-footer {
+        padding: 0;
+        &__container {
+            padding: 64px 127px 88px 127px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__logo-link {
+            margin-bottom: 41px;
+        }
+    .navbar--footernav {
+        display: block;
+        margin: 0;
+        margin-bottom: 85px;
+    }
+    .navbar__nav-list--footerlist {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar__nav-item--footeritem {
+        margin: 0;
+    }
+    .navbar__nav-item--footeritem + .navbar__nav-item--footeritem {
+        margin-top: 16px;
+    }
+    &__social-media {
+        margin: 0;
+        display: flex;
+    }
+    }
+}
