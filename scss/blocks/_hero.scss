@@ -1,6 +1,7 @@
 .hero {
     padding-bottom: 160px;
     &__container {
+        padding: 0 165px;
         background-image: url("../images/hero-Bg.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -9,7 +10,6 @@
     &__heading {
         width: 500px;
         margin: 0;
-        margin-left: 145px;
         margin-bottom: 40px;
         font-weight: 700;
         font-size: 56px;
@@ -20,7 +20,7 @@
     &__paragraph {
         width: 405px;
         margin: 0;
-        margin-left: 225px;
+        margin-left: 90px;
         margin-bottom: 40px;
         font-family: 'LexendDeca';
         font-style: normal;
@@ -32,15 +32,16 @@
 }
 .site-btn--hero__btn {
     margin-bottom: 152px;
-    margin-left: 225px;
+    margin-left: 90px;
 }
 
-////TABLET
+////TABLET QISMI
 
 @media only screen and (max-width:930px) {
     .hero {
     padding-bottom: 122px;
         &__container {
+            padding: 0 98px;
             background-image: url("../images/hero-t-bg.png");
             background-repeat: no-repeat;
             background-size: cover;
@@ -70,12 +71,13 @@
 
 }
 
-
+/////MOBILE QISMI
 @media only screen and (max-width:680px) {
     .hero {
         padding-bottom: 120px;
 
         &__container {
+            padding: 115px 32px 179px 32px;
             background-image: url("../images/hero-m-bg.png");
             background-repeat: no-repeat;
             background-position: center;
@@ -111,7 +113,6 @@
     .site-btn--hero__btn {
         display: block;
         margin: 0;
-        margin-bottom: 179px;
         }
 
 }

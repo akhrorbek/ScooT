@@ -1,6 +1,7 @@
 .services {
-    padding-bottom: 199px;
+    padding-bottom: 145px;
     &__container {
+        padding: 0 165px;
         background-image: url("../images/line-divider.png");
         background-repeat: no-repeat;
         background-position: top 50px left;
@@ -44,6 +45,7 @@
     .services {
         padding-bottom: 145px;
         &__container {
+            padding: 0 98px;
             background-image: none;
         }
         &__list {
@@ -72,7 +74,9 @@
 @media only screen and (max-width:680px) {
     .services {
         padding-bottom: 120px;
-
+        &__container {
+            padding: 0 32px;
+        }
         &__list {
             display: flex;
             align-items: center;
